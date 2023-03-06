@@ -93,6 +93,7 @@ public class BrowserUtils {
         jsExecutor.executeScript("arguments[0].style.color=''", element);
     }
 
+
     public static void verifyWebElementList(List<WebElement> ListOfWebElements,List<String> ListOfExpectedWebElements){
 
         List<String> actualElements = new ArrayList<>();
@@ -103,4 +104,7 @@ public class BrowserUtils {
         Assert.assertEquals(actualElements, ListOfExpectedWebElements);
     }
 
+    public static void verifyWebElement(WebElement actualWebElement,String expectedWebElement){
+        Assert.assertEquals(actualWebElement.getText(),expectedWebElement);
+    }
 }
