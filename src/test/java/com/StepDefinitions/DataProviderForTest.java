@@ -22,6 +22,7 @@ public class DataProviderForTest {
         CRMUtilities.LogOut();
         Driver.closeDriver();
     }
+
     @DataProvider(name = "userTypes")
     public Object[][] userTypes() {
         return new Object[][]{
