@@ -100,5 +100,7 @@ public class MainPage {
     //Modules under Profile Tab
     @FindBy(xpath = "//span[@class=\"menu-popup-item-text\"]")
     public List<WebElement>profileTab_allModules;
+    @FindBy(xpath = "//span[@id=\"user-name\"]")
+    public WebElement profile;
 
 }
