@@ -11,7 +11,13 @@ public class ChatAndCallsPage {
     public ChatAndCallsPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//span[@class=\"bx-desktop-tab-counter\"]")
-    public List<WebElement> fourIconsOnTheLeftSide;
+    @FindBy(xpath = "//div[@class=\"bx-desktop-tab-icon bx-desktop-tab-icon-im\"]")
+    public WebElement messageIcon;
+    @FindBy(xpath = "//div[@class=\"bx-desktop-tab-icon bx-desktop-tab-icon-notify\"]")
+    public WebElement notificationIcon;
+    @FindBy(xpath = "//div[@class=\"bx-desktop-tab-icon bx-desktop-tab-icon-config\"]")
+    public WebElement settingsIcon;
+    @FindBy(xpath = "//div[@class=\"bx-desktop-tab-icon bx-desktop-tab-icon-im-lf\"]")
+    public WebElement activityStreamIcon;
 
 }
