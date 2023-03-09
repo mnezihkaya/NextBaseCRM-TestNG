@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TaskTabIframe extends DataProviderForTest {
-    @Test(dataProvider = "userTypes")
+    @Test(dataProvider = "marketingUsers")
     public void TaskTabTest(String username) {
 
         CRMUtilities.LogIn(username);
@@ -16,6 +16,7 @@ public class TaskTabIframe extends DataProviderForTest {
         MainPage mainPage = new MainPage();
         BrowserUtils.highlight(mainPage.taskTab);
         mainPage.taskTab.click();
+        BrowserUtils.sleep(3);
 
         Driver.getDriver().switchTo().frame(mainPage.messageTab_iframe);
         BrowserUtils.highlight(mainPage.messageTab_body);
