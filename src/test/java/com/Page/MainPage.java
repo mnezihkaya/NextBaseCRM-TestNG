@@ -103,4 +103,7 @@ public class MainPage {
     @FindBy(xpath = "//span[@id=\"user-name\"]")
     public WebElement profile;
 
+    @FindBy(xpath = "//span[.=\"My Profile\"]")
+    public WebElement myProfile;
+
 }
