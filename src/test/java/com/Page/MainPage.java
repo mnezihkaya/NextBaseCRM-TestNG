@@ -16,7 +16,7 @@ public class MainPage {
     //leftSide modules
     @FindBy(xpath = "//span[@class=\"menu-item-link-text\"]")
     public List<WebElement> allModulesOnLeft;
-    @FindBy(id = "bx_left_menu_menu_live_feed")
+    @FindBy(xpath = "//li[@id=\"bx_left_menu_menu_live_feed\"]")
     public WebElement activityStream;
     @FindBy(id = "bx_left_menu_menu_tasks")
     public WebElement tasks;
