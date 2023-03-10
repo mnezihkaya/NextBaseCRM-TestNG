@@ -76,6 +76,7 @@ public class MainPage {
     //Modules under moreTab
     @FindBy(xpath = "//span[@class=\"menu-popup-item-text\"]")
     public List<WebElement> moreTab_allModule;
+
     @FindBy(xpath = "//span[@class=\"menu-popup-item menu-popup-no-icon feed-add-post-form-file feed-add-post-form-file-more \"]")
     public WebElement moreTab_file;
     @FindBy(xpath = "//span[@class=\"menu-popup-item menu-popup-no-icon feed-add-post-form-grat feed-add-post-form-grat-more \"]")
@@ -97,9 +98,19 @@ public class MainPage {
     @FindBy(xpath = "//div[@class=\"feed-item-wrap\"]//div[@class=\"feed-post-text-block-inner-inner\"]")
     public WebElement activityStream_Text;
 
+    //appreciation module
+    @FindBy(id = "blog-submit-button-save")
+    public WebElement appreciation_SendButton;
+
+    @FindBy(xpath = "//span[.=\"The message title is not specified\"]")
+    public WebElement appreciationErrorMessage;
+
+    @FindBy(xpath = "//body[@contenteditable=\"true\"]")
+    public WebElement appreciation_SendBodyMessage;
+
     //Modules under Profile Tab
     @FindBy(xpath = "//span[@class=\"menu-popup-item-text\"]")
-    public List<WebElement>profileTab_allModules;
+    public List<WebElement> profileTab_allModules;
     @FindBy(xpath = "//span[@id=\"user-name\"]")
     public WebElement profile;
 
